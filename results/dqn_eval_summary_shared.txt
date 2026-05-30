@@ -1,0 +1,10 @@
+DQN Evaluation Result
+---------------------
+maze_file=data/mazes_10000_seed0.bin
+model_path=results/dqn_micromouse_shared_mazes.pth
+num_eval_mazes=10000
+evaluation_time_sec=6926.784250
+avg_time_per_maze_ms=692.678425
+success_rate=98.85
+average_steps=128.22
+average_reward=359.94

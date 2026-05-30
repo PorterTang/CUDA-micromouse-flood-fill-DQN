@@ -1,0 +1,15 @@
+GPU CUDA Flood Fill Benchmark Result
+------------------------------------
+maze_file=..\data\mazes_10000_seed0.bin
+num_mazes=10000
+maze_size=16
+num_cells=256
+kernel_time_ms=12.219872
+kernel_time_sec=0.012219872
+avg_time_per_maze_ms=0.001221987
+distance_output_file=..\results\gpu_distances_10000.bin
+distance_output_shape=(10000, 256)
+distance_output_dtype=int32
+walls_bytes=2560000
+distance_bytes=10240000
+cuda_mapping=one_block_per_maze_256_threads_per_block

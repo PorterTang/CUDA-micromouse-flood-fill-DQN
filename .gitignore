@@ -1,0 +1,167 @@
+# ============================================================
+# Python
+# ============================================================
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+*.pyo
+*.pyd
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+.ipynb_checkpoints/
+
+
+# ============================================================
+# Virtual environments
+# ============================================================
+
+venv/
+.venv/
+env/
+.env/
+
+# Conda local env folder, if created inside project
+conda/
+.conda/
+
+
+# ============================================================
+# IDE / Editor
+# ============================================================
+
+.vscode/
+.idea/
+
+*.swp
+*.swo
+*~
+
+.DS_Store
+Thumbs.db
+
+
+# ============================================================
+# CMake / CUDA build output
+# ============================================================
+
+build/
+cmake-build-debug/
+cmake-build-release/
+
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+*.obj
+*.o
+*.lib
+*.a
+*.dll
+*.so
+*.dylib
+*.exe
+*.exp
+*.pdb
+*.ilk
+
+# CUDA intermediate files
+*.cu.o
+*.ptx
+*.cubin
+*.fatbin
+
+
+# ============================================================
+# Large generated maze dataset
+# ============================================================
+
+# Shared maze binary files
+data/*.bin
+
+# Metadata can be regenerated, but usually small.
+# If you want to keep meta files, comment this line.
+data/*_meta.txt
+
+
+# ============================================================
+# Generated result binaries / arrays / models
+# ============================================================
+
+results/*.bin
+results/*.npy
+results/*.npz
+results/*.pth
+results/*.pt
+
+# Text summaries are small and useful for reports.
+# Keep them by default.
+!results/*.txt
+
+
+# ============================================================
+# Generated image dumps
+# ============================================================
+
+# Ignore bulk exported maze images
+data/maze_png/*.png
+
+# Ignore bulk distance images
+results/distance_png/*.png
+
+# Ignore all generated result images by default
+results/*.png
+results/*.gif
+
+
+# ============================================================
+# Keep selected demo images for README / portfolio
+# ============================================================
+
+!data/maze_png/maze_00000.png
+!data/maze_png/maze_00001.png
+
+!results/dqn_reward_curve_shared.png
+!results/dqn_eval_path_shared_maze0.png
+!results/dqn_eval_path_shared_maze0.gif
+
+!results/cpu_flood_fill_path_shared_maze0.png
+!results/cpu_flood_fill_path_shared_maze0.gif
+
+!results/gpu_flood_fill_path_shared_maze0.png
+!results/gpu_flood_fill_path_shared_maze0.gif
+
+!results/cpu_flood_fill_path_shared_maze0_distance.png
+!results/gpu_flood_fill_path_shared_maze0_distance.png
+
+
+# ============================================================
+# Logs
+# ============================================================
+
+*.log
+logs/
+
+
+# ============================================================
+# Temporary files
+# ============================================================
+
+tmp/
+temp/
+*.tmp
+*.bak
+
+
+# ============================================================
+# Windows-specific
+# ============================================================
+
+desktop.ini
+ehthumbs.db
+$RECYCLE.BIN/

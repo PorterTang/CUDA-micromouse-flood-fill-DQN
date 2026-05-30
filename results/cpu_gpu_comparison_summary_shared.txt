@@ -1,0 +1,15 @@
+CPU/GPU Distance Comparison Result
+----------------------------------
+cpu_file=results/cpu_distances_10000.bin
+gpu_file=results/gpu_distances_10000.bin
+num_mazes=10000
+maze_size=16
+num_cells=256
+shape=(10000, 256)
+dtype=int32
+expected_bytes=10240000
+cpu_bytes=10240000
+gpu_bytes=10240000
+all_equal=True
+mismatch_count=0
+max_difference=0

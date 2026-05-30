@@ -1,0 +1,15 @@
+CPU/GPU Path Visual Export Summary
+----------------------------------
+maze_file=data/mazes_10000_seed0.bin
+cpu_distance_file=results/cpu_distances_10000.bin
+gpu_distance_file=results/gpu_distances_10000.bin
+num_mazes=10000
+maze_index=0
+cpu_distance_equal_gpu_distance=True
+cpu_path_equal_gpu_path=True
+cpu_path_length=29
+gpu_path_length=29
+cpu_png=results\cpu_flood_fill_path_shared_maze0.png
+cpu_gif=results\cpu_flood_fill_path_shared_maze0.gif
+gpu_png=results\gpu_flood_fill_path_shared_maze0.png
+gpu_gif=results\gpu_flood_fill_path_shared_maze0.gif
