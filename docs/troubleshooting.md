@@ -23,7 +23,7 @@ python -m rl.training_dqn
 Run from project root:
 
 ```bash
-cd C:\Users\27615\Desktop\graduate_school\RL\final_proj
+cd <your_path>
 python -m rl.training_dqn
 ```
 
@@ -112,31 +112,8 @@ Then evaluate:
 python -m experiments.evaluation_dqn
 ```
 
-## 5. agent.load("model_path") error
 
-Error:
-
-```text
-FileNotFoundError: No such file or directory: 'model_path'
-```
-
-### Cause
-
-The code uses a string instead of a variable.
-
-Wrong:
-
-```text
-agent.load("model_path")
-```
-
-Correct:
-
-```text
-agent.load(model_path)
-```
-
-## 6. draw_maze() got unexpected keyword argument 'show'
+## 5. draw_maze() got unexpected keyword argument 'show'
 
 ### Cause
 
@@ -158,7 +135,7 @@ show=False
 
 from the function call.
 
-## 7. GIF export fails
+## 6. GIF export fails
 
 ### Cause
 
@@ -172,7 +149,7 @@ Install:
 python -m pip install imageio pillow
 ```
 
-## 8. CUDA executable not found
+## 7. CUDA executable not found
 
 ### Fix
 
@@ -190,7 +167,7 @@ Example:
 .\cuda\Release\flood_fill_cuda.exe 10000 ..\data\mazes_10000_seed0.bin ..\results\gpu_distances_10000.bin ..\results\gpu_flood_fill_summary_shared.txt
 ```
 
-## 9. PyTorch CUDA unavailable
+## 8. PyTorch CUDA unavailable
 
 Check:
 
@@ -218,7 +195,7 @@ Check GPU driver:
 nvidia-smi
 ```
 
-## 10. Reward stuck during DQN training
+## 9. Reward stuck during DQN training
 
 Possible causes:
 
